@@ -1,0 +1,30 @@
+class auto:
+    def __init__(self, marka, model, color, przebieg):
+        self.marka = marka
+        self.model= model
+        self.color = color
+        self.przebieg = przebieg
+    def jedzprosto(self):
+        return "{} " + self.marka +" " + self.model +" jedzi prosto"
+    def colord(self):
+        return "{} " + self.marka + " " + self.model + " ma " + self.color + " color"
+    def stoi(self):
+        return "{} " + self.marka +" " + self.model +" stoi"
+    def wart(self, cena):
+        return "{} " + self.marka +" " + self.model +" kosztuje " + cena + " zł"
+    def przeb(self):
+        return "{} " + self.marka +" " + self.model +" ma przebieg: " + self.przebieg
+
+
+ferrari = auto("Ferrari", "F40", "Czerwony", '10000')
+ford = auto("Ford", "Mustang", "Niebieski", '60000')
+audi = auto("Audi", "R8", "Biały", '40000')
+mers = auto("Mersedes", "Eqe402", "Niebieski",'1000')
+nisan = auto("Nisan", "GTR", "Czarny", '50000')
+
+print (ferrari.jedzprosto())
+print (ford.colord())
+print (audi.stoi())
+print (mers.wart("400000"))
+print(nisan.przeb())
+
