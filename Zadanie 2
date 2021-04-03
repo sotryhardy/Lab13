@@ -1,0 +1,37 @@
+class ksiazka:
+    def __init__(self, autor, gatunek, nazwa):
+        self.autor = autor
+        self.gatunek= gatunek
+        self.nazwa = nazwa
+    def czytaj(self):
+        print("{} Czytam teraz" + self.nazwa)
+    def aut(self):
+        print("{} Autorem tej książki jest " + self.autor)
+    def lepsza(self):
+        print("{} Leprzą książką pisarza " + self.autor + " jest " + self.nazwa)
+    def gat(self):
+        print("{} " + self.nazwa + "należy do gatunku " + self.gatunek)
+    def polecam(self):
+        print("{} Polecam ci " + self.nazwa + " do czytania")
+
+
+WiP = ksiazka("Lew Tołstoj", "literatura piękna", "Wojna i Pokój")
+or1984 = ksiazka("George Orwell", "powieść", "1984")
+master= ksiazka("Bułhakow Michaił", "literatura piękna", "Master i Margarita")
+obraz = ksiazka("Oscar Wilde", "powieść gotycka", "Portret Doriana Graya")
+prest = ksiazka("Fedor Dostojewski", "powieść", "Zbrodnia i kara")
+
+WiP.czytaj()
+or1984.lepsza()
+master.gat()
+obraz.polecam()
+prest.aut()
+
+list = []
+list.append(WiP)
+list.append(or1984)
+list.append(master)
+list.append(obraz)
+list.append(prest)
+
+
