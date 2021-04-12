@@ -1,0 +1,43 @@
+class smartfon:
+    def __init__(self, marka, model, cena):
+        self.marka = marka
+        self.model = model
+        self.cena = cena
+    def ocenka(self, ocena):
+        if ocena >= 4:
+            print("{} " + self.marka + " " + self.model + " ma fajną ocenę, polecam")
+        elif ocena >= 3 and cena < 4:
+            print("{} " + self.marka + " " + self.model + " średnią ocene, poszukaj lepiej")
+        else:
+            print( "{} " +self.marka + " " + self.model + " ma bardzo złą ocenę, nie polecam")
+    def kategoria(self):
+        if self.cena >= 3000:
+            print ("{} " + self.marka + " " + self.model  + " jest flagmanem")
+        elif self.cena >= 2000 and self.cena < 3000:
+            print("{} " + self.marka + " " + self.model  + " ma cenę wiższą od średniej")
+        elif self.cena >=1000 and self.cena < 2000:
+            print("{} " + self.marka + " " + self.model  + " ma średnią cenę")
+        else:
+            print("{} " + self.marka + " " + self.model  + " ma nizką cenę")
+    def antutu(self, antututest):
+        print("{} Zgodnie z wynikami testu 'Antutu'" + self.marka + " " + self.model  + " ma: ", antututest, "balów")
+   
+    def rok(self,rokw):
+        print("{} " + self.marka + " " + self.model  + "został wydany w ", rokw)
+
+     
+
+xiomi = smartfon('Xiomi', 'Mi 11', 2700)
+iphone = smartfon('Apple', 'iPhone 11', 3700)
+samsung = smartfon('Samsung', 'S21', 800)
+huawei = smartfon('Huawei', 'Y6 prime', 1100)
+
+
+xiomi.ocenka(4)
+iphone.kategoria()
+samsung.antutu(160000)
+huawei.rok(2019)
+
+
+    
+
