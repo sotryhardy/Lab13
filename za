@@ -1,0 +1,22 @@
+class student:
+    def __init__(self, imie, nazwisko, kierunek):
+        self.imie = imie
+        self.nazwisko = nazwisko
+        self.kierunek = kierunek
+    def gdzie(self):
+        print("{} "+ self.imie + " " + self.nazwisko + " studiuje na kierunku " + self.kierunek)
+    def srocena(self, ocena):
+        print("{} "+ self.imie + " " + self.nazwisko + " ma srednią ocenę ze wszystkich przedmiotów: ", ocena)
+        if ocena <= 3.2:
+            print("    Studiuje złe")
+        else:
+            print("    Studiuje dobrze")
+
+
+
+student1 = student('Jakub', 'Kowalski', 'Informatyka')
+student2 = student('Andrzej', 'Pepa', 'Matematyka')
+
+
+student1.srocena(3.3)
+student2.gdzie()
